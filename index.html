@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquina1</title>
+</head>
+<body>
+    <script>
+        let escolha = prompt("Escolha sua bebida: café, leite ou chá");
+
+let valor;
+
+switch (escolha) {
+    case 'café': {
+        valor = 5.10;
+        alert(`Você escolheu café. O valor a ser pago é: R$${valor.toFixed(2)}`);
+        break;
+    }
+    case 'leite': {
+        valor = 5.20;
+        alert(`Você escolheu leite. O valor a ser pago é: R$${valor.toFixed(2)}`);
+        break;
+    }
+    case 'chá' : {
+        valor = 5.30;
+        alert(`Você escolheu chá. O valor a ser pago é: R$${valor.toFixed(2)}`);
+        break
+    }
+    default: {
+        alert("Você escolheu uma opção inválida, por favor escolha dentre as opções selecionadas: café, leite ou chá.")
+    }
+}
+    </script>
+</body>
+</html>
